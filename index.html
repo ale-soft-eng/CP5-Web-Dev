@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon2.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+    <title>Alexandre Assis | Portfolio</title>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Alexandre Assis</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Alexandre Assis</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About me</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toogleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/ale-pic (round).png" alt="Minha foto de perfil" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hi, I'm</p>
+            <h1 class="title">Alexandre Assis</h1>
+            <p class="section__text__p2">Data Scientist</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/ale-assis-pt-br.pdf')">Currículo
+                </button>
+                <button class="btn btn-color-1" onclick="window.open('./assets/ale-assis-en-us.pdf')">Resume
+                </button>
+                <!--<button class="btn btn-color-1" onclick="location.href='./#contact'">Contact
+                </button>-->
+            </div>
+            <div id="socials-container">
+
+                <!-- forma que eu criei pra abrir o link de imagem em outra guia -->
+                <a href="https://www.linkedin.com/in/ale-assis/" target="_blank">
+                    <img src="./assets/linkedin.png" alt="Meu Perfil do LinkedIn" class="icon">
+                </a>
+                <a href="https://github.com/ale-assis" target="_blank">
+                    <img src="./assets/github.png" alt="Meu Perfil do Github" class="icon">
+                </a>
+                <a href="https://www.kaggle.com/alexandreassis" target="_blank">
+                    <img src="./assets/logo-kaggle.png" alt="Meu Perfil do Kaggle" class="icon">
+                </a>
+                <!-- forma original de criar link de imagem -->
+                <!-- <img src="./assets/linkedin.png" alt="Meu Perfil do LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/ale-assis2121/'" > 
+                <img src="./assets/github.png" alt="Meu Perfil do Github" class="icon" onclick="location.href='https://github.com/aleeidos'" target="_blank">-->
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/ale-about-pic.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>+1 year<br>Python</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>Software Engineering<br />Second Semester</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I'm Alexandre Assis, 26 years old and I'm from São Paulo, Brazil. Currently I'm studying for a Bachelor's degree in Software Engineering at <a href="https://www.fiap.com.br/" target="_blank">FIAP University.</a> Regarding my professional goals, I'm pursuing a career opportunity in Data Science and Analytics. Very interested in Artificial Intelligence.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Data Science & Analytics</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Power BI</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Excel</h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse my</p>
+        <h1 class="title">Projects</h1>
+    
+        <!-- Carrossel Bootstrap -->
+        <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Primeiro Slide (Projeto 1) -->
+                <div class="carousel-item active">
+                    <div class="card-border-container color-container">
+                        <div class="card-container">
+                            <img src="./assets/machinelearning-pic.png" alt="Projeto 1" class="project-img" />
+                        </div>
+                        <h2 class="experience-sub-title project-title">1: Price Forecasting with ML</h2>
+                        <div class="btn-container">
+                            <a href="https://www.kaggle.com/code/alexandreassis/p1-en-us-boats-prices-forecasting" target="_blank">
+                                <button class="btn btn-color-2 project-btn">
+                                    In English
+                                </button>
+                            </a>
+                            <a href="https://www.kaggle.com/code/alexandreassis/p1-pt-br-previs-o-de-pre-os-de-barcos" target="_blank">
+                                <button class="btn btn-color-2 project-btn">
+                                    In Portuguese
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Segundo Slide (Projeto 2) -->
+                <div class="carousel-item">
+                    <div class="card-border-container color-container">
+                        <div class="card-container">
+                            <img src="./assets/soon-projects.png" alt="Projeto 2" class="project-img" />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Soon...</h2>
+                        <div class="btn-container">
+                            <a href="https://github.com/" target="_blank">
+                                <button class="btn btn-color-2 project-btn">
+                                    Github
+                                </button>
+                            </a>
+                            <a href="https://github.com/" target="_blank">
+                                <button class="btn btn-color-2 project-btn">
+                                    Live Demo
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Terceiro Slide (Projeto 3) -->
+                <div class="carousel-item">
+                    <div class="card-border-container color-container">
+                        <div class="card-container">
+                            <img src="./assets/soon-projects.png" alt="Projeto 3" class="project-img" />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Soon...</h2>
+                        <div class="btn-container">
+                            <a href="https://github.com/" target="_blank">
+                                <button class="btn btn-color-2 project-btn">
+                                    Github
+                                </button>
+                            </a>
+                            <a href="https://github.com/" target="_blank">
+                                <button class="btn btn-color-2 project-btn">
+                                    Live Demo
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Controles do Carrossel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in touch</p>
+        <h1 class="title">Contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:alexandre7assis@gmail.com">alexandre7assis@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/ale-assis/" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#experience">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169;2024 Alexandre Assis. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
